@@ -1,0 +1,63 @@
+﻿[
+  {
+    "name": "default",
+    "height": 15,
+    "width": 15,
+    "tiles": [
+      "snow1",
+      "snow2",
+      "snow3"
+    ],
+    "tileLayout": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      2
+    ],
+    "obstaclePossible": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+      "name": "Underground",
+      "height": 15,
+      "width": 15,
+      "tiles": [
+        "Metal1"
+      ],
+      "tileLayout": [
+        0
+      ],
+      "obstaclePossible": [
+        4
+      ]
+    }
+ ]

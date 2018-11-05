@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D1154CC1-7644-C4F2-05C7-F6AA47606EBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\Combat\Scripts\Adjustment.cs" />
+     <Compile Include="Assets\Combat\Scripts\GenerateBattlemap.cs" />
+     <Compile Include="Assets\Combat\Scripts\JsonHelper.cs" />
+     <Compile Include="Assets\Combat\Scripts\MapList.cs" />
+     <Compile Include="Assets\Combat\Scripts\ObstacleList.cs" />
+     <Compile Include="Assets\Combat\Scripts\TileList.cs" />
+     <Compile Include="Assets\Overworld\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Overworld\Scripts\DialogueControl.cs" />
+     <Compile Include="Assets\Overworld\Scripts\DialogueSet.cs" />
+     <Compile Include="Assets\Resources\AssetDemo\MusicLoader.cs" />
+     <Compile Include="Assets\Resources\AssetDemo\PanelSwap.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\MapGenerator.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\MapProperties.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\NodeEvent.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\NodeHoverScript.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\NodePartySelect.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\NodeProperties.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\PartyProperties.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\PartyWalk.cs" />
+     <Compile Include="Assets\Resources\Map\Scripts\TileProperties.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\AStarPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\BreadthFirstSearch.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Buff.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Cell.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGrid.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridState.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateAiTurn.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateGameOver.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateTurnChanging.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateUnitSelected.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateWaitingForInput.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CustomObstacleGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CustomUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\DijkstraPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\EquilateralHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\GreedyBestFirstSearch.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HeapPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Hexagon.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HexagonalHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HumanPlayer.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\ICellGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IGraphNode.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\ListPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\NaiveAiPlayer.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Player.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RandomUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RectangularHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RectangularSquareGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Square.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\TriangularHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Unit.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitState.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsFinished.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsFriendly.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsReachableEnemy.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsSelected.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateNormal.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\Archer.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\AttackBuff.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\BuffSpawner.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\DefenceBuff.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\GuiController.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\HealingBuff.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\Hero.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\MyHexagon.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\MyUnit.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\Paladin.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\RandomObstacleGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example1\Spearman.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example2\Alien.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example2\FlyingAlien.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example2\MyOtherHexagon.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example2\OtherGuiController.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example3\GenericUnit.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example3\MySquare.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Example3\NextGuiController.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Tutorial\GUIController.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Tutorial\SampleSquare.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Tutorial\SampleUnit.cs" />
+     <Compile Include="Assets\UI\Scripts\ItemLayout.cs" />
+     <Compile Include="Assets\UI\Scripts\LevelInfo.cs" />
+     <Compile Include="Assets\UI\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\UI\Scripts\NextImage.cs" />
+     <Compile Include="Assets\Utility\Scripts\AssetList.cs" />
+     <None Include="Assets\Resources\Map\Icons\tile order.txt" />
+     <None Include="Assets\TBS Framework\ReleaseNotes.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

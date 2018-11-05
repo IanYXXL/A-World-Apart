@@ -1,0 +1,19 @@
+diff file produced using http://www.mergely.com/editor.
+
+The diff file illustrates the difference between R1 of the document( found in the previous revisions folder) and the R2 version of the document in this folder.
+
+Summary of changes:
+
+1) 
+In terms of lore, item descriptors and combat mechanics, certain aspect of the narrative has been updated to more accurately reflect the current state of development and/or intentions.
+
+Specific statistics has been recorded for weapons in combat
+
+2)
+Certain overambitious plans regarding sound effects have been pruned from the documents due to time constraints. SFX (section 13) has been replaced with Sound and Ambiance (section 12) which provides a high level overview of the sounds used in the game and give design justifications to their use.
+
+3)
+Many sections remain unchanged since revision 1 of the document. Specifically, the ~76 issues on our repository can be mostly represented in the issues presented in the design document. Issues such as unregulated interactions (i.e. map interactions possible while dialogue is playing) appears in several areas of the game (i.e. both combat and overworld maps can be interacted with during inappropriate times).
+
+4)
+This diff was produced against the Jan 26, revision 1 of our implementation documents. The major change from revision 0 to 1 onwards was the inclusion of section 13 which covers bugs and issues.

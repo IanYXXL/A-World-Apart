@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1672259285070554}
+  m_IsPrefabParent: 1
+--- !u!1 &1672259285070554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4897345523950930}
+  - component: {fileID: 114798793737554916}
+  - component: {fileID: 114668574506280988}
+  - component: {fileID: 114440436190643656}
+  - component: {fileID: 114448313373852146}
+  m_Layer: 0
+  m_Name: CellGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4897345523950930
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672259285070554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114440436190643656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672259285070554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609291c6bd626b94f8d8bfa5a558f5a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squarePrefab: {fileID: 186534, guid: 52b93693306dc1e49927cee651317c11, type: 2}
+  height: 10
+  width: 10
+--- !u!114 &114448313373852146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672259285070554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa6e9b297b6dfe4b8619d3d27d31f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Amount: 10
+  ObstaclesParent: {fileID: 0}
+  ObstaclePrefab: {fileID: 101402, guid: 635d9470b379fce4c9a685f745f78e5a, type: 2}
+  CellGrid: {fileID: 114798793737554916}
+--- !u!114 &114668574506280988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672259285070554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a125d5f077bea1842aaac91bad278579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitsParent: {fileID: 0}
+  CellsParent: {fileID: 4897345523950930}
+--- !u!114 &114798793737554916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672259285070554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738545c63018a9840970e6adf4dfafae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGameOver: 0
+  PlayersParent: {fileID: 0}
+  turnOrder: 
+  turnOrderPlayerNumbers: 
+  turnIndex: 0
+  myUnits: []
+  lastPlayer: 0

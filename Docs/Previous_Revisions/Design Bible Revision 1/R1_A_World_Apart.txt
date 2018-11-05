@@ -1,0 +1,1181 @@
+﻿A World Apart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Revision 1.0.1
+
+
+01/26/2018
+
+
+Table of Contents
+Design History                                                                                                           Section
+Version History1
+Overview 
+Project Overview 2
+Theme / Setting / Genre 2.1
+Targeted platforms 2.2
+Monetization model 2.3
+Influences 3
+Philosophy 4
+Mechanics 
+Core Mechanics 5
+Combat 5.1
+World 5.2
+Item Mechanics 5.3
+Merchant Mechanics 5.4
+System Mechanics 5.5
+Other Features 6
+Game Info
+Summary 7
+Characters 8
+Episode 1 9
+Episode 2 10
+Episode 3 11
+Episode 4 12
+Episode 5 13
+Episode 6 14
+Tools of the Cursed 15
+Infernal Beasts and other Abominations 16
+Asset Management
+Visual 17
+Music 18
+SFX 19
+Rev 1
+Bug and Issue Report
+Bug and Issued Diagnosis 
+
+
+
+
+
+
+________________
+
+
+1. VERSION HISTORY
+
+
+0.1.1 -Initial document
+0.2.1 - Design Document, major additions in section 5 and onwards.
+1.0.1 - Revision 1 plan, see section 20 for full report.
+
+
+
+
+________________
+
+
+2. Project Overview
+
+
+A World Apart is a pseudo open-world rogue-lite with turn-based strategy and rpg elements. It follows the journey of a team of ISO (International Space Organization) astronauts as they try to make their way to the other side of an alien planet to rendezvous with their team.
+
+
+Players will travel a world from node to node, meeting new people and making decisions based on their interactions. From time to time, they will participate in pseudo-randomly generated turn-based combat on an isometric grid. In this combat, the player will take control of three main characters, whom they can upgrade with relics found on the journey. They’re goal is to keep the party alive, and make it to the other side. They do this by managing a food resource, and making sure all three characters do not die in combat.
+
+
+As they travel this world, they might find alien factions vying for power, a lone android guarding humanity’s last hope, or a city buried in ice. 
+
+
+2.1 Theme / Setting / Genre
+Themes: exploration, starting over, mystery
+Setting: Frozen world of Ariadne
+Genre: Turn based Strategy/RPG/Management
+
+
+2.2 Targeted Market
+
+
+The target market for this game is late teens and up. It presents an intellectual and story driven take on Rogue lites like FTL. It’s geared towards an audience who wants a challenge for the mind.
+        
+2.3 Selling Points
+* procedurally generated world, enabling replayability
+* rich story following various characters as they brave the icy wastelands
+* Strategy based on skill, not randomness
+* randomly generated item system that allows players to adapt and try different play styles as they travel the world
+* Large variety of customization, upgrades, and special skills
+
+
+
+
+2.4 Premise
+
+
+In 2243, the Specter space probe returns from it journey into The Hole. In its data banks, indications of a habitable planet on the other side. Still reeling from the aftermath of the Human-Machine war and unable to do anything to slow Humanity’s extinction, three world powers send three ships into the unknown, hoping to create humanity anew.
+
+
+75 years pass with no news of the would-be settlers and still no way to stop the mass heating of the planet. In a last ditch attempt to save mankind, the newly found ISO sends one last fleet of ships to the other side. Among them, the spaceship Theseus, its crew, and 50 of the brightest minds humanity has to offer.
+
+
+-----
+  
+
+
+
+“Is that a gravity ring?” 
+Dr. Kroner Broese peered through the large 4-inch thick window on the side of the Theseus’ cockpit, sucking cold coffee out of what he liked to call a “kool aid bottle”. Sure enough, a large, white ring floated in front of him, barely visible above the blindingly white planet below. He looked around at the three others in the room, half of the few who’ve woken early from their long slumber, before turning his gaze back on the ivory ring in front. “One of ours?”
+
+
+“No,” Captain Dhomer muttered, “looks like NorthAl make, probably from the first expedition. Alexei, you have the ship clock fixed?”
+
+
+“Something must have shorted out.” said the engineer. “No idea how long we were out”
+
+
+“Either way, we’re late to the party, let’s get a closer look at the ring.”
+
+
+Suddenly the ship jolted, slamming Kroner into its side. “Fuck, what was that”
+
+
+“Hey captain, I think we hit something” a calm voice across the comms, most likely lieutenant Armstrong. “Doris says it might be debris.”
+
+
+“Alright, we’ll try to make a course change.” stated Dhomer. Another jolt, this time, more violent, followed by another, and another.
+
+
+“Capt…” the comms fizz out.
+
+
+“Armstrong! Armstrong!”
+
+
+-----
+  
+
+
+
+Kroner pulls his hand away from Captain Dhomer’s chest. No heartbeat. He looks around, no Lee. Given her military background, Kroner figured she was probably off getting the lay of the land. Alexei suffered a mild concussion, but he should be fine in a few hours. That’s it,  no others. Kroner pulled his ISO parka up and pried open the storage room door.  At least there are plenty of supplies, maybe enough to get to the rest of the crew, wherever they are. Time to get started.
+
+
+2.5 Player Role
+
+
+The player will choose between nodes in the overland travel and manage the resources gathered from node to node. In overland travel, they will also be able to customize characters with gear and other relics picked up or won from encounters. 
+
+
+In combat, players will control the three character to try to defeat a set of enemies. The combat will take place in turns, over an isometric grid. And the player will be able to control these characters to move, attack, or use certain abilities or relics.
+
+
+Players should be motivated to reunite the astronauts with their team, and to keep them alive through the tough journey.
+
+
+
+
+________________
+
+
+3. Influences
+
+
+FTL - Faster than light
+
+
+  
+
+We’re borrowing the procedurally generated node-based travel system from FTL. It’s a good system for simulating the traversal of a large area, such as a planet, like in A World Apart.
+
+
+Renowned Explorers International Society
+  
+
+
+
+Similar to FTL, and actually about travelling across the world. We’re also borrowing the idea of using a turn based strategy with multiple heros from RE.
+
+
+The Banner Saga
+
+
+  
+
+
+
+We like the non-random turn-based strategy combat in The Banner Saga. Since our game with be procedurally generated, we want to limit the RNG in other parts of the game to encourage player skill rather than random chance.
+  
+
+Dustforce
+
+
+We’re borrowing the artstyle for the characters here for simplicity.
+
+
+________________
+
+
+4. Design Goals and Philosophy
+
+
+No Bullshit Moments
+
+
+Since the overworld and loot system is random, we want to limit the amount of randomness in other parts of the game. Unlike predecessors like XCOM, we don’t want the player to lose because of a lucky shot. Therefore, the combat in the game should be well informed, and never random.
+
+
+Repetition, but not repetitiveness
+
+
+Due to the nature of procedurally generated games, players will have to play the game over and over before finally getting to the ending. As such, we don’t want the player to experience the same game every single time. This means an open world, with branching storylines, and unlocking new cards for the customization system every time through. In this way, players will have a different experience every time they start the game over.
+
+
+Less talk, more rock
+
+
+Talk is needed to convey the story, but walls of text should not be used for exposition. The story will be told primarily through character dialogue, visual cues, and item descriptions. We don’t want to put people to sleep with large chunks of exposition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+5. Core Mechanics and Elements
+
+
+5.1 Combat
+
+
+Unit Stats
+All Units (that is, Characters controlled by the Player, or Enemies controlled by the Computer) have a set of Stats associated with them. These stats are as follows: Health, Armor, Attack, Range, Movement, and Speed.
+
+
+Health determines how close a Unit is to being Incapacitated. Once a Unit’s health drops to 0 or below, that Unit is Incapacitated. An Incapacitated Unit does not have an place in the Turn order, and therefore cannot Move or perform Actions. In addition, the Incapacitated Unit will be rendered (in an incapacitated state) but will not occupy the space it is on (like an Obstacle would). When a Unit makes an Attack or a similar action, the Attacked unit will lose Health equal to Attacker’s Attack - Defender’s Current Armor, minimum 1. When a Unit’s Health is half or below, its Attack is halved (rounded up).
+
+
+Armor determines how much Health damage is taken when an attack is made to Health. Armor is its own value,and can be attacked. Damage to Armor is equal to the Attacker’s Attack.
+
+
+Power determines how much damage is done to another Unit when an Attack Action is made.
+
+
+Range determines how many Squares away from the current Square the Unit can attack. Squares in range are determined with the same algorithm as movement, with the exception that Obstacles do not factor into the pathfinding.
+
+
+Movement determines how many Squares a Unit can move from its current position. The Squares that are possible for the Unit to move through is determined with a pathfinding algorithm.
+
+
+Speed decides the Unit’s place in the Turn order. Units with higher Speed will have a Turn before units with lower Speed.
+
+
+These Stats will be able to be viewed at any time when the item menu is opened or when a character is clicked on in the combat scene. The stats will display in order and the player at any time can view these stas by hovering the mouse over the stat with the tooltip being displayed. The break down will show the base stat, item and equip modifiers, enemy modifiers and environment modifiers. 
+
+
+In-Combat Actions
+
+
+In Combat, Units have available to them a plethora of different Actions. Generally, these can be grouped into Move, Attack Actions, Gun Actions, Special Actions and Item Actions. In the span of a Turn, any Unit can take a Move, followed by one of the other Actions. After this, the Unit Automatically ends its Turn. Some Actions do not automatically end the turn, these are designated as a Bonus Actions. After a Bonus Action, another Action may be performed.
+
+
+Move -> The unit can move to a Square within its movement range
+Attack Action -> The Unit Attacks another Unit not on its side
+Gun Action -> An Attack action that has a seperate Power and Range than the Unit that takes the action. In addition, the Gun Action ignores Armor for calculating Damage.
+Special Actions -> Special Actions are actions unique to a specific Unit. These actions can do a variety of things, and they will be described in detail in the descriptions of individual Units.
+Item Actions -> Item Actions are a set of actions unique to the Player. Over the course of the game, the Player will be obtain items that are usable in Combat. These items can do a variety of things, and will be described in 5.3 Item Mechanics
+
+
+Performing Actions
+Inside of the combat scene, the player will only be able to perform actions on a handful of objects. These include the other character players, tiles, enemies and bosses. The player should never be able to move through or ontop of any other items in the scene and should not be able to interact with the terrain on the map.. The player does need to select the entity that they are interact with in order to perform the desired action, and the visual que will be given showing that they player can make that selection. The visual que is the red “X” that appears ontop of the desired entity. If the entity cannot be interact with, then it will have no visual que.
+
+
+Enemies and Bosses
+Enemies will have the same variety of actions as the player does, but will be programmed to do the following process to the closest target. The enemy will move to a target, perform a special or item action on the target if in range, and finally attack action against the enemy if within range. If there a multiple players in approximately the same distance, then the enemy will randomly decide which target to perform the above process on. Bosses will perform the same as regular enemies, but will have a more diverse list of bonus actions occur more frequently to increase their difficulty.
+
+
+Ending Conditions
+Generally, Combat will end only when there are no more Units on one of the two Sides. However, this is not the only way for Combat to end. Occasionally, it can end with a specific conditions. One of these is the Incapacitation of a specific Unit. Another is the use of a specific Item on a specific Unit. 
+
+
+Ending Combat
+At the end of Combat, if the Player loses, the Game ends. In this instance, the data is deleted and the player is returned to the Main Menu. If the Player wins, Items and Resources are added to the Inventory. Typically, they are randomly generated, but in special occasions, the Items and Resources are specified. All Combat have a Difficulty value, and is part of a Biome. The generated Items will be based on these two things.
+
+
+Combat Camera
+Combat will feature an isometric orthogonal camera constrained to slightly beyond the corners of the Grid. The camera view provides a 2d view that seems 3d without needing to implement 3d objects and has scaling elements like having sprites become smaller as they become farther away. This allows all sprites and characters to be easily viewable and selectable, and best showcases the 2d art.
+
+
+Players will be able to move the camera by hovering the mouse near the edge of the screen. The constraints placed on the camera prevents the player from scrolling past the rendered area, and too far away from the Grid, where the combat will happen. 
+
+
+Grid
+Combat in A World Apart will occur on a 25 by 25 square Grid. The Grid is generated by randomly selecting a template from a list that pertains to the environment. For example, if combat occurs in a snowy forest, the Grid will be generated from one of 6 “Snowy Forest” templates, chosen randomly. Some Grids correspond to a specific combat event, such as a boss battle, will only have 1 template associated. The size of the Grid is large enough such that there is enough room to maneuver the characters in a tactical manner (as characters tend to move 5 blocks, and have ranges of 3 or less), without having large swaths of blank grid that would likely never be used.
+
+
+Grid templates will also have an associated list of possible Obstacle and Enemy Position templates. Obstacles are placed onto the Grid to block off certain parts of the Grid. The Enemy Position template specifies what enemies are spawned in, and where they are spawned in. These two types of templates are added to offer tactical variance to the game.
+
+
+The Grid, Obstacles, and Enemies are spawned from mixed-and-matched templates in order to create a large set of distinct random encounters without having to sacrifice a great deal of the inherent polish in a handcrafted experience.
+
+
+Turn Order
+Unlike traditional Turn-Based Strategy games, the Turn order will not be alternating, in which one side performs all actions on all units before the Turn switches to the other side. Instead, each Unit will have its own Speed stat, which will determine its place in the Turn order, and Turns will be on a Unit-to-Unit basis. Upon the Defeat of all but one Unit on either side, the lone Unit will preempt all other Turn order and act on the next possible Turn.
+
+
+In traditional Turn-Based Strategy, the way that Turns switches from one side to another allows for large amounts of unpredictability and swing in the combat. Have Unit-to-Unit turn order allows for the game to play out more like a game of chess, where combat is decided less on chance and more on tactical play. The addition of the lone Unit turn preemption is sort of a “last stand” feature, giving the players an increased shot of coming back against bad odds, as well as something to play around when dealing with the enemy.
+
+
+Menu
+The Combat scene has a single menu that has two options to further open the options menu or exit game menu, see 5.2 Pausing and Menu. This menu acts like the main menu but for the overview world. It can access the options menu and exit game buttons. When this button is selected, the game is paused.
+
+
+5.2 World
+The game world is presented to the players as a static time, node based graph with colors to indicate the type of node and link upon hovering over a node that reveals the nodes that link to it. Players will also see further details on the UI element at the bottom of the screen that gives additional information regarding the event available at the node (i.e. resources gained).
+Camera
+The camera system of the overworld map consists of an orthographic camera that is at a fixed distance to the map. The player is able to move the camera through the use of the WSAD keys. Only the region the player is currently in will be displayed in the overworld scene. There is a constraint enforced on the camera at  bounds of the map such that the camera cannot scroll beyond view of it. 
+Pausing and Menus
+If the player is in the Overworld view, opening the menu will not pause the game and a selection that is still be traversed will still occur if the player hits the menu button. The player will still be able to view the map partially as the menu will still have an alpha layer. 
+There are a few menus in the game, but with the exception of the overworld main menu, will send the current game session into a hanging position until the menu has been closed. The list of menus proceeds as:
+        Exit Menu - This menu is opened when the player selects the exit button. This menu asks if the player wants to exit to the main menu or continue the current play session.
+        Options Menu - This menu opens up the selections that the player can make to optimize their game experience with audio and visual changes.
+        Merchant Menu - This menu is opened when the player lands on the merchant node. See the merchant question for more references. Once the menu has been closed, the player will not be able to re open the menu at that node. As such, a prompt to ask if you are ok with this selection is mentioned before the player leaves the shop.
+        Item Menu - This menu is opened from selecting the item button from the over world view. This menu consists of 3 panels, which include from left to right the character loadouts, item pool and item description. The character load out displays what each selected character is equipped while also displaying their stats. The Item pool displays all of the unequipped items that the player party has acquired. There will be sort by buttons that will allow the items to be sorted by type and level. Finally the item description panel displays the description, expanded item image and stat bonuses of a selected item. A item is selected when the mouse is hovered over the item. Stat changes will be changed to the character as well indicating changes that would be made to the character with this specific item change.
+        
+
+
+Resources
+There are two types of resources currently used in the navigation of the overworld: currency and supply. Currency will be used to buy various items while supply will help in the traversal of the world map. In order to travel between the locations in a region, a set amount of supply will be necessary. Players may acquire supplies via visiting resource nodes, completing combat interactions, or by making various choices in the story. Resources may also be exchanged for one another at story or shop nodes.
+
+
+Node Placement
+There are currently three types of nodes available in the game: resource, lore/story, and combat nodes. Resource nodes grant players a cache of resources upon visiting it for the first time. Story nodes progress the main story or present a side story upon first visit, and may continue the story upon subsequent visits to that node or other nodes. Finally combat nodes represents hostile encounters that loads a combat scene upon visiting.
+
+
+There will also be the inclusions of shop nodes where players trade one resource for another or purchase items. These nodes will have a seperate menu or scene to depict shop interactions. 
+
+
+In order to place the nodes reasonably, several considerations must be made during procedural generation. A node cannot overlap another node or be part of a cluster of nodes in close proximity. The distribution of nodes should also be roughly uniform across the map. Finally, there needs to be at least ten nodes in a given region.
+
+
+The algorithm used to place the nodes first considers each unit of the overworld map, which are hexagon tiles, and roll for a chance for each unit to contain a node. On passing, a node is generated on a random place upon the hexagon tile. This approach ensures that nodes are never overlapping since hexagon tile do not overlap. There can also only be a maximum of 6 neighbours within a single unit (inner radius of a hexagon tile)  of distance for each node, which prevents node overclustering. By statistical distribution, there will also be over 10 nodes on a map with 50 tiles and a roll chance of 40%. In the event the minimum node count is not met, the generation function can be rerun.
+
+
+
+
+Events
+In regards to the type of events that a node offers once it is placed, a custom algorithm is used. Resource events will be preferentially placed closer to the starting location of the player, while story events will be more dispersed throughout the region. Combat events are generally linked with story event nodes or places closer to the linking node to the next region, which is considered to be the end of region. Depending on the lore of the region, this may augment the algorithm. Implementation wise, story events are placed first on the nodes with a random distribution in the map, followed by combat events in unoccupied nodes close to story nodes and one at the region junction node. The remaining nodes are then filled with resource nodes.
+
+
+Node Linking
+The player has the ability to travel between nodes on the overmap. Mechanistically, all nodes should have at least one viable path from the initial node the player party was placed upon. All nodes, except for certain nodes relevant to region transition and story, will be revealed to the player upon entry to the region. Nodes that aren’t immediately revealed may be unlocked by the player through the completion of story driven content.
+
+
+In terms of map traversability, in addition to having all nodes be reachable, nodes should be connected to their close neighbours. Two algorithms are used in linking the nodes: Prim’s algorithm and a simple implementation of a 3-nearest neighbour algorithm. Prim’s algorithm yields the minimum spanning tree which guarantees the reachability of every node on the map. The use of a 3-nearest neighbour algorithm adds an extra layer of redundancy to allow for player choices in terms of which nodes to explorer first.
+
+
+Travel and Supply
+Travelling to different nodes will incur a supply cost to the player, one of the ways for players to obtain supply is through the visiting of resource nodes. These nodes grant the player a designated amount of supply and/or currency when visited. Mechanistically, there would be enough  supplies across the resource nodes upon map generation to traverse the entire map at least three times. In addition, there will be an availability of a shop to buy supplies with currency. The challenge to the player then, will be to maximize their currency gain whilst minimizing their supplies spent. If the player runs into a deficit of supplies, they will have the option of purchasing supplies for currency.
+
+
+Implementation wise, this is achieved by taking the cost of all the connections within the minimum spanning tree, and doubling it before applying a 3x multiplier to the result and take that as the total supply to be distributed across the resource nodes of the region . The reason the cost of the connections is doubled is due to the potential for backtracking (dead ends) when traversing a minimum spanning tree.
+
+
+
+
+While there is more than enough supply to explorer the region available to the player, they may still soft-lock themselves by wandering repeatedly within an area of visited nodes and not exploring further. There will be no implemented ways of stopping the player from doing this as part of the experience of overworld exploration is to strategize resource and currency spending to maximize benefits. Players clearly wasting supply should be punished by a restart of the region or loss of the game.
+
+
+Dialogue
+As players encounter various story events in the region, various narratives are played to both progress the story of the characters and give the player a sense of immersion. While the nodes for story content is predetermined upon the generation of the map, the exact context of the dialogue and story is obscured to the player until their visit to the node. This is done both to prevent key plot elements from being spoiled, and to ensure proper chronology of events for certain sections of the story. Unlike the rest of the overworld map, story dialogue is chosen when the player actually visits the node. This is done so that no matter which story node the player visits first, the story is always played out in the order it was meant for.  Implementation wise, story dialogues will be stored in a list of lists, where each sublist contains a complete or independant  storyline for the region. This way, progress on multiple storylines can be tracked and parallel story progression can be achieved where needed.
+
+
+Hidden Nodes
+Certain nodes on the overworld will be initially hidden from the player’s view. These are typically junction , boss combat or region transitioning story bearing nodes. For region transitioning nodes, since these nodes represent the last stop(s) a player makes before permanently transitioning into the next region, we want the players to at least understand enough of the narrative to go onto the next region without feeling lost. In terms of boss encounters, certain story or combat encounters might be a prerequisite for these encounters to be unlocked. Store junctions, which may or may not be hidden depending on the region and lore, could be locked behind other events. In terms of implementation, these nodes are not drawn, and paths to these nodes are not shown, until they are no longer flagged as hidden.
+
+
+5.3 Item Mechanics
+Items will have the ability to stack on the player's base stats, current modifiers in the combat session, and other item stacks. The breakdown of the player statistics will be given by scrolling over the character's numerical statistics and a tooltip will show how those values are derived by iterating through the same modifiers and items. Player's will not be told what items stack well with others as this will be kept as the idea of item combinations a dynamic practice.
+
+
+Item Types
+        For the current version, the player is able to equip themselves with a melee weapon, a ranged weapon, a armour buff, a tool, and two consumable items. This layout may be subject to change if we think the player needs more or fewer item slots and if item categories need to be redistributed. As of right now, the consumable item slot is able to be equipped passive (applies a constant stat change) and external consumable (stat change affects other player characters rather than the equipped character) items but this will be tested to find the best balance output that we wish to achieve.
+        Our items can be categorized into 4 sections:
+ Passive Items - These items are never executed in the combat phase but are instead apply a stat change to the character for the course of the combat phase. There might be a condition for the item to trigger, but the player is never able to activate it.
+Consumable Items - These items are used when the player activates them and are not replenished for the course of the entire game. If a player uses this item, then it is removed from play and the item slot becomes open. There may be multiple Consumable items in the same slot, but once all instances have been used, ie all grenades have been used, then the item is removed.
+Rechargeable Items - These items work similar to consumable items, but they instead have a cool down period that needs to be completed before they can used again. These items also replenish when the combat phase has been completed, but there may only be a certain amount of times that the player can use it in the current combat phase.
+Equipment Items - These are an extension to the passive items but have specific categories for their item slot and character type. They include the melee, armour and ranged items but may also include other items if we deem that only specific items are allowed to be used by a given character. Equipment items may also provide specific bonus modifiers to specific enemies or attacks, something that passive items will not do.
+
+
+        Here are a description and categorization of each item that the team has currently come up with:
+Passive Items:  
+* Armour Up : Increases the amount of armour by 5 plus 3 for each level.
+* Fast Boots : Increases the characters movement by 5 plus 2 for each level
+* Bullet Damage Up : Increases the amount of damage bullets do against enemies health and armour by 5 plus 2 for each level
+* Bullet Armour Damage Up : Increases the amount of damage bullets do against enemies armour by 10  plus 2 for each level but decrease health by 5.
+* Range Up : Increases the Range of character by 3 plus 1 for each level
+Consumable Items: 
+* Health Pack : Increases the target player’s health by 45 + 5 per level.
+* Frag Grenade  : Grenade that can be thrown 5 tiles away towards an enemy, having the equivalent attack value of 18 plus 2 per level.
+* Shock Grenade  : Grenade that can be thrown 5 tiles away towards an enemy, effectively skipping their turn.
+* Poison Lubricant : Applied onto the melee weapon, causes the enemy that was hit on the health bar to looses 5 + 3 per level every 5 turns.
+* Serrading Oil : Applied onto the melee weapon, causes the enemy that was hit on the health bar to looses an extra 5 + 2 per level.
+* Gamma Shield : Provides a temporary shield that increases the armour value to 200 for a single turn.
+* NanoBodies : Increases health by 10 + 2 per level over the course of 5 turns.
+Rechargeable Items: 
+* Shield : Activates a shield for 3 turns and takes not damage for the whole turn, unless the threshold is higher than 50 + 10 per level. The recharge level is 3 turns.
+* DFibs : Allows the for the ability to revive a downed character to 50 health within 4 to 2 turns of being downed and a recharge rate of 4 to 2 turns based on the level.
+* Tracker : Allows for the ability to a gun to have the ability to track a target, increasing the range significantly. It allows the a ranged weapon to hit an enemy from any range. The recharge rate is anywhere from 6- 1 per level.
+* Energy Suit : A suit that has been perfected at running a small reaction of nuclear fission, causing temporary boost of energy to the user. The Movement speed increases by 2 + 1 tiles per level and the user’s turn index increases by one. 
+Equipment Items: 
+* MPPPDD: Stands for Magnetic Propulsion Payload Projectile Delivery Devices, one of the most powerful compact light infantry rail guns known to man. MPPPDD ignores armour by making a pierce and provides a 50 attack. 
+* Chain Sword : Chain powered wielding weapon, great against flesh opponents, not so good against armour. 10 attack +5% per level against flesh.
+* Rusted Pipe : 3 attack
+* Pistol: 10 attack at a range of 8 tiles
+* Crossbow : Doesn’t use bullets, but pretty weak against armoured opponents. 5 - 10% added per lower level.
+* Galactic Rifle: Standard issued rifle. 15 attack  at 12 tiles plus 1 range per level
+* Laser weapon : Utilizes laser weaponry,  suffers against armour penetration. 15 damage -10% per level at 16 tiles.
+* Wrench: 6 attack
+* Officer’s Sword: 12 attack
+* Laser Sword: Sword that has been crafted from a plasma cutter, quite good against armoured opponents. 15 attack + 10% per level 
+* Hand Grenade Launcher: launches an equipped grenade by an extra 3 + 1 tiles per level.
+* Flare Gun: Reduces shooting range for enemies and friendly characters by the amount of tiles that they are away from the point of impact of the flare gun. equation is (5+1 per level) - number of tiles away. diagonal tiles are counted as tiles spaces. Also provides an attack of 3 if enemy is hit.
+        More items will be added to the game, but each conceptualization will be categorized to the above categorizes. By constraining the items to the 4 categories, we can ensure that our game continues to be modular while having that creative flexibility to add cool or balanced items.
+
+
+Activating items in the combat scene
+        Items are activated by clicking on them in the combat scene in the action phase. Items that are are unable to be activated are are 'greyed' out indicated that they cannot be activated in the scene. These will include passive, equipment and rechargeable items that still in their cooldown. Rechargeable items will have number over the item icon showing how many turns are needed for the item to be used again.
+
+
+5.4 Merchant Mechanics
+
+
+Accessing the Merchant Menu
+There will be a node that is mapped with the Merchant and when the player arrives on the Merchant node, they will be able to open the Merchant menu. 
+
+
+Merchant view
+The menu will be made up of 2 Primary panels that contain the Merchant's items, the player's items and one smaller secondary panel that contains the character equip loadouts and finally party resources like bullets and supplies. 
+
+
+Bartering with Merchant
+The player will then be able to barter with the merchant by transferring items back and forth between the merchant and the player item pools. There will be a barter value at the bottom of the page that shows the player if the merchant will accept the offer from -1000 to 1000. Positive values will be accepted stating that the merchant will think he is getting a good deal, a negative will not be accepted stating that the merchant will think he is not getting a good deal and a 0 results in a fair deal that will be accepted. Because the game has no currency, selling or buying items/resources will result in the player needing to sell/buy items to the merchant. The merchant will probably have unlimited bullets and resources but a random pool of generated items.
+        The items that will be available will be of all different kinds of randomly generated items. This system is better than generating item suggestions based on the lack of items that are useful to player as that may restrict a play style and suppress the roguelike element.
+        Part of the roguelike aspect is having that idea that you never know what kind of items you are going to get when you come upon a random event node or merchant node, so having the experience of finding a rare item knowing the chance may never come again. This can put the player in a difficult position and is why we think that this is better than pre programming scripted drops as it can create a sort of repetition. So in that case, no the randomly generated items will only be created in that instance of the merchant, the user cannot go back to purchase them.
+
+
+Determining the Value of an Item
+        The algorithm that will determine the cost of the items will be scalar of the item's level and it's purpose. Testing the project by using automated tests will allow us to see what items are easily able to be purchased and will allow us to balance the game. The item values will be changed in according to allow some items to me more rare than other, allowing important decisions to be made when selling and buying items. The basic algorithm we will use is:
+
+
+
+where Value is the value of the object, i is the item, N is the number of the same items in the merchant pool, V is the hardcoded value of the item and S is the level scalar value that is 1, 2, 3, or 4, finally the decimal value is dropped into an integer value. 
+For example, if the merchant has 4 armour ups, the one level one, two level twos and one level 3, and the armour ups have a hardcoded value of 20, the price of purchasing each item of different scale would be:
+
+
+Level 1: 34
+Level 2: 68
+Level 3: 103
+        
+5.5 Options and File Information
+Changing Audio and Visual settings
+        A major of game settings will apply immediately when the game is running and only a few settings will be needed to restart the game. Our group is still unsure of how Unity determines it's resolution or Anti Aliasing settings but we can determine that only those two setting will be needed to restart the game if changed. If any other graphical, UI or audio changes are made to the game, they will be saved on the user's computer. We can ensure this by reading the information from a file that has all of the default settings for the game and then save the changes to that file if changes are made. The number of settings that can be changed are the system's resolution, Anti Aliasing, texture quality, windowed mode, UI size and offeset, master volume, music volume and sound effect volume.
+
+
+Recording successful games.
+        If a player is able to complete the game, then their game instance is recorded in the successful games folder which can display the game’s information such as final score, items accumulated, amount of character deaths, outcomes and achievements performed. This information will be able to be accessed under the main menu page when implemented. 
+
+
+Recording successful games.
+You can load a previously saved game and the game automatically saves at certain sections of the game. With the game being a roguelike, we really want to ensure that we can minimize the number of quick loads without corrupting the file so that the player can have an ironman experience. The game will be saved at every decision that the character makes, as we will model the way Crusader Kings 2 and FTL perform their autosaves. The times that the game will be saved will be during the following scenarios:
+        When the player moves to a new node, the save function will be called in parallel and save the part position at the new node.
+When the player closes the merchant menu.
+        When the player selects end turn for their character.
+        When the enemies have finished their turn.
+        When a character is incapacitated after an enemy attack.
+        When an enemy is destroyed after a player attack.
+        When the player wins the boss battle and moves to the next region.
+
+
+
+
+
+
+
+
+6. Other Features
+
+
+
+
+________________
+
+
+7. World  
+
+
+
+
+When Galileo gazed up at the night sky the first time, he saw the moon, the stars, and the Hole. His father peered into the blackness of the Hole, as did his father’s father. The monarchy proclaimed it was the gateway to heaven, the clergy declared it was the eye of God. Now, a large tower burst from the capital of Rome, reaching into the heavens, built to be a bridge to the Hole, and the spanish want to tear it down.
+
+
+-----
+Sergeant Hollis pried off another piece of drywall from the mound, muttering to herself. It’s been months since her squad was assigned to machine cleanup, and she’d hoped he team would have been given their well deserved leave after 7 years on the frontlines. “A few more weeks…” she mumbled, heaving a steel girder off of the pile.
+
+
+She was relieved of course, for a few years near the end, it looked as if the bots would win, that would have been the end to everyone. Although, she thought, anything to put a pause to this grunt work. Just then, Hollis found herself staring at a hatch. This was new… maybe a bot bunker, used to escape the EMP, or, worse, an undiscovered production plant.
+
+
+Suddenly, the ground shook, knocking Hollis on her back. Just as she was about to get up, she paused. In the distance was a trail of smoke, following what could only be an ICBM.
+
+
+-----
+“Launching in 5… 4… 3… 2… 1… liftoff”
+
+
+An audible sigh of relief filled the room, followed by a gasp.
+
+
+“NorthAl, come in NorthAl,” director McGinnis’s voice rang over the comms. He did not sound pleased.
+
+
+“This is Yuri from NorthAl Command.”
+
+
+“We’re detecting unidentified aircraft in our airspace, looks like your model”
+“Shit” Yuri muttered, “USAU, it’s not ours, shoot if necessary”
+
+
+“We already did! there’s too many of them. This is an internationally important mission NorthAl, you better not have fucked this up!”
+
+
+“Like I said, It’s not ours.” Yuri checked the room, only headshakes. He sighed. At least the Britannian ship is on track.
+
+
+“If we get shot down, we’ll be in the path of your ship”
+
+
+“I know, there’s nothing we can do. You should have toughened your security like we suggested.”
+
+
+“Fuck you NorthAl, this is 300 lives we’re talking about here, if not the fate of mankind.”
+
+
+-----
+
+
+“Welcome new astronauts. More than a century ago, our ancestors battled machine-kind for our freedom, but we could not prevent their retaliation. We are all aware that our planet is heating up, and fast. Last year alone, we lost hundreds of thousands of lives, and many once great cities. in 50 years, humans may no longer walk the earth. 
+
+
+I am not saying these things because I want you to know them, for it is an ever-present reality. I am saying them so that you may etch it into your heart. Whether you come from Britannia, The Northern Alliance, or USAU, you have all been hand picked and well trained. You may be humanity’s last hope, and what you face in the future may be ever so much more difficult than what we face here.
+
+
+Here is your second chance. Here is our second chance. Go forth and settle, and perhaps we will one day meet again”
+
+
+-----
+“Is the Cryogen Ready?” asked Dr Rosen
+
+
+“Yes, every payload has been armed, we’re waiting for the signal,” reported Dr Grant “Felix… are you sure about this?”
+
+
+“not at all,” replied Rosen, nervously chewing on the tip of his pencil, “but it’s not like we have any choice… alright, give them the signal”
+
+
+“okay… let there be snow”
+
+
+-----
+
+
+The Earth, now known as Ariadne, is a ball of snow. Having to go underground after the Cryogen Disaster, pockets of genetically modified humans became isolated from each other over the course of seven centuries. By the time the surface was finally warm enough for human habitation, many of humanity’s technologies became lost to the current generations. Technology reverted to iron age, and groups of people who no longer spoke the same language became hostile to each other over land and resources. 
+
+
+While maintaining most of their human features, most of the “Neo-humans” looked vastly different from each other. Some had vibrant skin as a result of previous experimentations on photosynthetic skin, while others grew disfigured from centuries of inbreeding. Eventually, these people forgot about the once-great cities buried under the ice, and became alien to the now stranded crew of the Theseus.
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+8. Characters
+
+
+8.1 Primary Characters
+  
+
+Dr Kroner Broese
+History
+
+
+An American-born German who grew up in the non-irradiated east coast, Kroner Heidel longed to escape his small town upbringing in favor of the tales he’d heard about the great cities of Britannia. At the age of 16, Kroner stowed away on a ship bound for Paris, determined to make something of himself in his new cosmopolitan home. 
+
+
+Unfortunately, his new home did not embrace him as he embraced it. Kroner’s days were spent scouring the lower city for food, odd jobs, and a place to stay, using his wit and dexterity for less than wholesome endeavors. His misadventures often ended in pain, and on more than one occasion, Kroner found himself performing self-surgery. Realizing  he had a knack for pulling bullets from flesh, Kroner decided to use what he had saved to enroll in the University of Britannia. Graduating top of his class, Kroner, now Kroner Broese, soon became a well known surgeon.
+
+
+While parts of his past still followed him into his career, Kroner was still ISO material. Three years after basic training, he was designated the Theseus’ primary doctor. 
+
+
+Personality
+
+
+Kroner, while a renowned surgeon respected by his peers, could not be described as a serious individual. His philosophy is that of cocky optimism, because otherwise life would just be too depressing. While at times he would, by himself, dwell on his past, Kroner chooses not to show that visage to anyone.
+
+
+Alexei Ivanov  
+Appearance
+Alexei is a fairly broad man with dark brown hair, with several cybernetic limbs.
+
+
+History
+A young machinery engineer who became a prominent leader in the Horizon Manufacturing group. Graduating from the Australian Institute of Technology, Alexei strayed very little from his honorable, boy-scout, small town roots. He loves his family, He loves his wife, and he loves his job.
+
+
+Before being chosen to be on the ISO’s final mission, Alexei had himself wanted to find a solution to the problem of the Great Heat. His work of harnessing solar energy slowed earth’s demise by decades, but Alexei never thought it’d be enough. Realizing that he could do no more for the planet, he begrudgingly accepted the task of going on the ISO mission and maintaining their machinery. Along with his wife Alyanna, a biologist of some renown, he boarded the Theseus and prepared for the journey ahead.
+
+
+Personality
+You can always count on Alexei for two things, doing what he thinks is right, and being a huge pushover, not in that order. Unlike his wife Alyanna, Alexei is soft spoken and indecisive. He’s often teased by others on the mission, like Kroner, but usually doesn’t pay it much mind. He knows he’s here for a reason, and if people don’t respect him for his other qualities, they at least respect him for that.
+
+
+Lee Yun Long
+
+
+
+
+History
+
+
+An orphan raised by her grandparents, Colonel Lee Yun Long grew up listening to her grandfather’s tales, regaled by stories of an older, united China, free from the Northern Alliance. Even as a child, Lee had fight in her, more often flipping over railings and fighting bullies than studying at school. When her grandfather died when she was 14, she faked her age and entered the Northern Marines.  
+
+
+While Lee was tough, being a marine was not like she thought. Over the years, she learned discipline, order, and the importance of teamwork. The years were hard, and she became harder. Three years into her service, Lee was thrust into the Indian war, a conflict that would not end until she was 23. By the end, she had earned a Red Cross, a Captain’s rank, and a disdain for the things she had to do in the war.
+
+
+While she stayed on for a few more years, eventually earning the rank of Colonel, Lee was exhausted from the war, and tired of the military. At the age of 29, Lee Yun Long received an honorable discharge, and went on to become an advocate for mental health in the military.
+
+
+When she was approached by ISO at the age of 32, she happily said yes. She needed to put the past behind her, and hoped that the ISO mission would mean that she could use her skills for something good.
+
+
+Personality
+
+
+Lee is by far the quietest of the crew of the Theseus, often preferring the quiet of her room rather than a chat over coffee. As the crew became more familiar with her, they were surprised by her snarky and often morbid comments. While she’s not one to open up, or someone you could confide in, she exudes an air of confidence and authority that puts people at ease.
+
+
+8.2 NPC’s
+
+
+K-8
+An android created to guard earth’s last remaining underground seed vault. She know that she’s guarding something for ISO, but no longer remembers why or what she’s guarding. She will be hostile to anyone in the underground city.
+
+
+Usamy and Lucarts
+A race of genetically modified human beings living in the region near the initial crash site. Both races are immensely beautiful, and had Green and Red hues in their skin used for photosynthesis. As a result, the clothing of the Usamy and Lucart people are incredibly strange, consisting of heavy wool and fur for insulation, but also a transparent material placed on portions of the body, predominantly the back, that allowed for sunlight to come in.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+9. Episode 1 - Just Us
+
+
+9.1 Area Description and Background
+
+
+The trio land in what is essentially modern russia. The area has been vastly changed from the place Alexei used to call home. Instead of vast swaths of pasture dotted with sprawling cities, the trio finds a frozen wasteland. Previously blooming cities have been torn down by natural disaster and crumbled in the frozen aftermath of The Catastrophe. The land has reverted back to a natural state, full of forests, glaciers and wildlife. 
+
+
+Since the Theseus’ fateful journey, technology has improved beyond recognition and much of the things they find will seem foreign. To them, the land looks as if it’s the aftermath of an ancient and advanced civilization. 
+
+
+While the ground above are filled with snow, trees, and what one might expect of the far north, the ground beneath is vastly different. Since the Catastrophe, many of Russia’s old infrastructures have crumbled, including the widespread use of nuclear technology. Which the radiation has affected the ground above, it is far more prevalent in the abandoned tunnels and bunkers underneath. Here lives a great deal of the “People” that remained underground after the Catastrophe, mutated beyond recognition, and fully adapted to underground life. These Genomorphs have lost their mind over the generations and have become feral.
+
+
+9.2 Characters and Enemies
+
+
+Swinus - a boar like creature that wander the wastes
+  
+
+Genomorph - a race of beings that have mutated from humans after centuries of genetic modification, nanotech experimentations, and radiation. They have become feral and will attack anything without regard.
+
+
+  
+
+Wheelers - a large security type robot that wander certain parts of the underground. Their centuries-old programming and deterioration may cause them to be hostile.
+  K-8 - an android programmed to guard one of the only remaining seed vaults on earth. She has forgotten about what exactly she is protecting, and now wanders the underground complex without direction
+  
+
+9.3 Story Progression
+
+
+The trio land in a a large snowbank in the middle of the Russian tundra. They find that not much of the crash is salvagable, aside from a rover, some guns, and some rations. Among the wreckage is the Hermes transmitter, which the ISO put on the Theseus in order for them to have contact with the other ISO ships. 
+
+
+Kroner suggests they rig the Hermes to the rover and drive it to a nearby hill, and upon arriving the trio receive a weak distress signal from the other side of the planet. They attempt to send back a message, but with no response. Lee suggests that with the rover and the icy state of the planet, they might be able to make their way to where the signal was.
+
+
+The trio drive around the wasteland, stopping at forests and mountains and ruins. They remark about the similarities that the land had to earth, and marvel at the strangeness of the technology. Kroner suggests that it looks like the remnants of an alien civilization, but Alexei thinks that it might actually be the other ISO Ships. He thinks that the crew of the Theseus was in cryosleep for a really long time, and that the orbiting ISO ship that they saw before they crashed is an indication that the ISO were here long before them. 
+
+
+Just as they’re having this conversation, they notice a strange smoke in the distance. Choosing to investigate, they find the remnants of an ISO escape Pod, encased in ice. Alexei, coming to the conclusion that the pods power supply melted down, finds a set of logs by an ISO astronaut by the name of Frigg Vantos, who isn’t a member of the Theseus. She states that the geography of the west was difficult to navigate, but she may have found an underground passage. The trio decide that this is the best way to go, and that maybe they’ll run into Vantos on the way.
+
+
+The trio find a large entrance on the side of a mountain, which they take the rover under. Travelling for days underground, they are assaulted by the Genomorphs. They eventually make their way to a junction point, which seems to serve some other purpose. They are attacked by K8.
+
+
+At this point they may incapacitate her or resolve the conflict peacefully. K8 will recognize the ISO badge that Alexei still keeps.
+
+
+After this encounter, if they didn’t kill K8, she will show the the seed vault. Either way, they find their way to the other side, and travel across the pacific underground to get to North america.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+10. Episode 2 - Like Us
+
+
+10.1 Area Description
+Unlike the previously desolate North Asia, North America is far greener. The land is full of wildlife and strange plants that have sprouted from the ground. Here, a race of genetically altered photosynthetic beings live, which Kroner dubbs the Plant People, or Planties for short. Springing out of the snow is the remnants of many old American vaults, populated by the Planties. 
+
+
+The area is a mix of mountains, hills, ruins, settlements, and forests. In addition, the group will now have access to vendors via the Planties.
+
+
+The vaults-cities are rustic and almost medieval, being built from futuristic technology as well as more primitive building techniques.
+
+
+10.2 Characters and Enemies
+
+
+Planties - Planties are a group of humanoid, elf-like people with green or red skin. They are the result of genetic experimentation on photosynthetic skin and the beautification of humanity. Having been trapped underground for centuries, most of the knowledge of technology and the old world have disappeared from their history. Their culture can be described as a blend of medieval europe and modern north america.
+
+
+Usamy - a group of only green Planties that have made settlements out of older army bases and ruins. Due to the regression in technology and the lack of knowledge of architecture, these bases are more reminiscent of castles and keeps than what they were before. The Usarmy have a grundge against the Lucarts and have been in a war with them for quite a long time. They have captured the Lucart prince.
+  
+
+Lucarts - a group consisting of both red and green Planties. They are at war with the Usamy, who have kidnapped their prince. The Lucarts tend to the the more aggressive of the two groups, while the Usamy are slightly more racially motivated.
+
+
+Kath - An Usamy Captain that will attempt to capture the trio. She isn’t a fan of the current war, but have a bias against the “Reds”
+
+
+Prince Mora - The captured Lucart prince and the heir to the Lucart throne. He understands that he’s in a sticky situation as he’s sure that his chancellor wants him dead. He also disproves of the war and like to see it stopped. He thinks that his capture was orchestrated by his chancellor, in order for him to rally support against the Usamy.
+
+
+Chancellor Horitice - Chancellor of the Lucarts and general of the Lucart army. Holds a lot of power in the Lucart Nation and wants to crush the Usamy.
+
+
+Eyebots - Strange weaponized robots wandering the land
+  
+
+10.3 Story Progression
+
+
+Upon crossing the pacific, the trio run into Kath and some of her “Tanks”. Here, they can either fight them and avoid capture, flee, let themselves be captured, or try to talk their way out of the situation. This last one is a bit hard as none of them actually understand what Kath is saying. They do have translators, but it takes quite a bit of conversation for the translator to help them decipher the language.
+
+
+If they flee, every time they run into Lucart or Usamy soldiers they will have to fight them or run. Eventually, they might understand their language and become informed of the situation.
+
+
+If they fight and win, it’s the same thing, but they capture Kath and can be informed that way, after learning the language.
+
+
+If they let themselves be captured, lose the fight, or somehow talk their way out of the situation, they are taken to the Usamy city, where they will learn the language and the situation.
+
+
+Whatever the case, the political situation is thus: The Usamy and Lucarts are at war, the Usarmy have captured the Lucart Prince, Mora, and the Lucarts are amassing an army to take down the Usarmy.
+
+
+The Usamy can be convinced to give the prince back, which results in his death and does nothing to deescalate the situation. They can give the prince back with the trio as escort, which might play out in a variety of ways. They not give the prince up and fight, which will result in the prince’s death and the deaths of many Usamy. The Trio can also offer to act as peace mediators.
+
+
+If they act as mediators, there will be several people from both sides trying to stop them. If the take the prince, Mora will inform them of his situation and the group can choose to help him. Theres several ways the senarios can pan out, but the results are one of the following:
+
+
+The prince dies and the war occurs
+The prince dies and the war is stopped
+The prince is alive and the war occurs
+The prince is alive and the war is stopped, but the chancellor stays in power
+The prince is alive and the war is stopped, and the chancellor is removed from power.
+
+
+If the war is stopped, the Usamy will give the players a unique item
+If the prince is alive, the prince will give the players a unique item
+If the chancellor is removed from power, the player is escorted to the end of the zone without having to do the boss.
+
+
+Whether or not the player participates in the political intrigue, they are able to cross america and stumble upon several ruins that indicate that the ISO was in fact here. If they talked with the Usamy, they will also get some of this information, indicating that some ISO members were here a couple of centuries ago. The whole while, the group is trying to piece together the evidence and where these Planties came from.
+
+
+At the end of the zone, they find themselves near the great lakes, at the site of a giant man-made wall. If they don’t get escorted by the Lucarts, they encounter the walls defenses and must shut it off (combat encounter). At the end, they are met with some soldiers dressed in strange armor, and notice that they are human.
+
+
+
+
+
+
+
+
+________________
+
+
+11. Episode 3 - Not Us
+
+
+11.1 Area Description
+In addition to snow, ruins and other geographically relevant locations, The last area, which spans from the great lakes to the west coast (which is where the rest of the Theseus’s crew is), also has many outposts from the Foundation for Future Learning (FFL). These are mostly bunkers operated by mechanical soldiers, or filled with modified Genomorphs.
+
+
+11.2 Characters and Enemies
+Genomorphs - modified versions of the the Genomorphs the trio met previously, much more savage.
+
+
+Planties - several planty tribes that are hostile towards the group because of the actions of the FFL
+
+
+FFL soldiers - killer androids created by the FFL to do their bidding. In addition to recon, these androids are also tasked with rounding up Planties for experimentation
+  
+
+FFL scientist - A small group of human scientist bent on advancing science at any cause. They are abducting Planties to experiment on
+  
+
+
+
+Eyebots - Enhanced versions of the previous Eyebots
+11.3 Story Progression
+
+
+The trio go after the “Humans” and find out they’re actually androids, and that they are trying to abduct some Planties. They intervene and find out about the FFL. As they travel towards the site of the Theseus landing, they are encountered with many stories about how the FFL are abusing their power, as well as several conflicts with the FFL
+
+
+The group might make up their minds to stop the FFL, both out of morality and the concern that they might pose a threat to the crew of the Theseus. They make their way to the facility, and find the horrific experiments unfolding. They are ambushed by the FFL and have to fight their way out of the facility. Lee is gravely injured and, depending on the amount of story that the player has experienced, dies.
+
+
+They fight a final boss without Lee, and, if she is still alive, drag her away. They find themselves in the control room, and with the rest of the FFL on their heels, they have only one choice: one of them must stay behind and blow up the facility. If Lee is alive, she volunteers, otherwise the player chooses who gets to live. The FFL is vanquished, but the loss is felt. The survivor(s) stumble out, and eventually make their way to the theseus crash site, reuniting with the rest of the crew.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+12. Music
+
+
+12.1 Motifs
+
+
+12.2 Boss Music
+
+
+
+
+
+
+________________
+
+
+13. SFX
+13.1 Weapon Effects
+
+
+
+
+13.2 Movement Effects
+
+
+Walk on Dirt
+Walk on Stone
+Walk on Metal
+Walk on Wood
+Walk on Flesh
+Walk In Water
+
+
+
+
+
+
+
+
+
+
+13.3 Other Character Effects
+
+
+Grunt
+Heavy Breath
+Death
+
+
+13.4 Enemy Effects
+
+
+13.5 Boss Effects
+
+
+________________
+
+
+14. Rev 1 Plan
+14.1 Condensed Bug and Issue report
+
+
+After overlooking the open issues on the git repository, we have condensed common or related bugs into the following groups. Each group of bugs have been titled and contain a general description of what the issue is. To stay concurrent with our development schedule, we will provide a period of when these these bugs will be addressed so that they may be removed when we are finished with similar portions of the game. 
+
+
+14.1.1 Bug Fixes
+
+
+Issues and bugs will be worked on and closed as new systems are implemented, so as not to slow down development.
+
+
+The following are bugs we have been made aware of and have been considered to be “undesirable” :
+
+
+B1. Click through error: Players can click through UI elements onto the game. At time of this document, this bug is fixed in the combat but not in the map
+B2. Camera spawn error: After combat, the camera may spawn off map, causing the player to be disorientated.
+B3. Camera Sensitivity and Control: Camera in combat was overly sensitive and unintuitive. This issue and been fixed.
+B4. Restarting with persistence: resources persisted through restart of a new game initialization.
+B5. Game freezing after game over: after ending the game via lack of supplies, the game freezes and the player is stuck.
+B6. Object order: objects that are supposed to be in front sometimes appear behind.
+B7. Leftover objects after game over: objects from map do no despawn after game over.
+B8. Portraits display from previous dialogue: Portraits from previous conversations are not destroyed.
+B9. Lack of tooltip removal: Tooltips still appear when they are clearly not supposed to, this is in relation to either the tooltip not destroying itself when the cursor is moved or it generates itself when its not supposed to. This happens for example when the a character dies yet the information is still displayed.
+B10. Menu generation overlap:  This occurs when a new menu is created, yet the previous one is not destroyed making an overlap.
+B11. Characters occupying the same grid space. This seems to be a tile occupation check not being raised.
+B12. Incorrect bar information. This is when amour bars and health bars are displaying incorrect information. This also happens for when the character tries to hit an enemy and is incorrectly told that they cannot hit the enemy when they can.
+B13. Combat assets appearing in Overworld view. There seems to be assets transferring from the combat space over to the overworld view.
+B14. Information is lost. When scenes are switched, some type progress that was made during them is lost when the scene is switched. This could be inventory items, resources values and previous settings.
+B15. Soft locking in Combat Phase. Set as character A’s turn but character B’s portrait is being displayed, not allowing the player to make a move. This also happens for when the character has no supplies and the game over screen does not appear.
+
+
+14.1.2 Issue Fixes
+
+
+The following are issues we have been made aware of that could improve the usability of the game and it’s enjoyability::
+
+
+ISS1. Bad Signifiers: some buttons don’t have a good enough signifier for the player, due to lack of instructional text like “press space” or graphical indications like flashing buttons. Same thing occurs for damage indications to players and enemies. Cursor changes have also been suggested.
+ISS2. Dialogue skips: since the game does repeat, a skip dialogue option is nice
+ISS3. Dialogue quickness: sometimes dialogue is skipped because of how quickly it spawns, dialogue needs to be slowed down
+ISS4. Lack of Menus: There is a lack of a menu in both the map and the combat screen, these include sub menus that give the player to continue playing after losing or conditions checking menus and decisions(ie “Are you satisfied with your changes” menu or double clicking on locations to prevent misclicks). Quit menu also lacking.
+ISS5. Lack of Tutorial: There is a lack of guides for the tutorial portions of the game. This includes basic guidelines for the opening game, how to play the game and then finally important concepts for the game. There is also no explanation of what the win conditions are. There is also no quick access to see how things work if the player forgot a single thing like damage calculation, tooltips may help.
+ISS6. Camera Movement during Dialogue: the camera can be moved during dialogue
+ISS7. Ending screen bad text: The end of the dialogue displays the wrong text
+ISS8. Unpolished Assets: Some assets give off the wrong impression in combat, same thing with a few animations.
+ISS9. Inconsistent spelling and grammar: Item names, dialogue and other items have punctuation and grammar issues such as capitalization, spacing.
+ISS10. Lack of Save Game functionality: Saving at checkpoints is non existent and was hard to keep track of progress as nothing is saved.
+ISS11. Lack of customizable options: These included text speed, gamma and brightness levels, and resolution. This also goes for alternate controls such as using the mouse to move the map instead of WASD controls.
+ISS12. Poor optimization: User experienced significant slowdowns while game was running in the background
+ISS13. Controls are not uniform between all game scenes. There is an inconsistency between the two scenes where the controls do not match their purpose. Most common case is WASD but may include meu access.
+ISS14. No “set to default” buttons. There is no buttons or hotkeys that reset the player back to a default position or location, so players may easily get lost in the expansive overworld or may not remember what the default settings for the game are without restarting.
+
+
+14.1.3 Bug Fix Priority Matrix
+The priority Matrix visually displays which bugs and issues the team will need fix  based on how urgent the necessary fix is, how quickly it will be able to fix and how the fix may be related to future feature implementations. Bugs will have a more pressing matter over issues generally as they have unwanted effects, but the matrix is to be taken with a grain of salt. The higher priority of the bug or issue, the more likely is is to be fixed.
+
+
+
+
+Priority
+	Bug ID
+	Expected fix date
+	
+
+	Very High - If this bug is not fixed then the game is broken.
+	B5, B14, B15
+	Week of Jan 28 - Feb 3.
+	
+
+	High - This bug disrupts the player’s ability to play, but does not break it.
+	ISS4, ISS5, ISS10, ISS11, B2, B4, B11, B12
+	Week of Jan 28 - Feb 3.
+	
+
+	Intermediate - These bugs bothersome enough to make the player feel discomfort.
+	ISS1, ISS7, ISS12, ISS14, B1, B9, B10, B13
+	Week of Feb 4 - Feb 10.
+	
+
+	Low - These bugs are noticeable but don’t detract significantly from the experience
+	ISS2, ISS3, ISS8, ISS13, B3, B7, B8
+	Week of Feb 4 - Feb 10.
+	
+
+	Very Low - These bugs are minor nuisances to the player.
+	ISS9, B6
+	2 Weeks of January 28 - Feb 10.
+	
+
+	None - These bugs should not affect the players performance or experience.
+	ISS6
+	2 Weeks of January 28 - Feb 10.
+	
+
+	
+
+
+
+14.1.4 Anticipated Features
+These are features that the team hopes to implement that will remove some of the issues in the current state of the game. Although these changes may bring new bugs, they will effectively eliminate the above issues.
+
+
+Menus: Menus will be added to all aspects of the game, and will be accessible via a button press. This will include a main menu option, a save option, and options for changing resolution and volume of music and sound effects. These will also include “double checking” menus which are responsible for asking the player if the selection they have made is appropriate.
+Items: An item system will be implemented in order for characters to be customizable and for more options during combat. This will be both equippable items and one time use items.
+Choices: Dialogue will have choices now, in order to give a more RPG feel and add depth to decision making
+More Events: Event system will get more types of events, and most nodes will have dialogue. Events may now greatly affect the party and their available resources. There will also be some dialogue systems that will give the player some choice to a certain event, encouraging risk and reward playstyle.
+Quests: Quests and quest markers will be added. These will be both main and side quests, and may offer unique rewards.
+Shops: Players will be able to buy items with money at certain nodes.
+Item usage in Combat: Items will be usable in combat, both passive items and consumable items that have an effect on other enemies/ characters.
+Current player information display: This is a perminate view that will be shown in the combat view that will be matched with a hovered character
+Tutorial: a tutorial will be added in order for the player to understand the game better, players will be able to turn off the tutorial if they want.
+Tooltips: The team will be adding tooltips to nearly every interactable object to act as a temporary wiki. This will help the player understand things they may frequently forget like damage calculations or node types.
+Polish: overall polish will be added to the game in the form of better animations, optimized graphics and workflow, and improved picture quality.
+
+
+14.2 Bug and Issue Diagnosis
+
+
+This section will cover the team’s plan in how to solve the bugs and issues in the previous section. This section will give insight into what updates need to be made to fix the issues and what specific components will be needing to investigated to fix the bugs. This section will also give insight as to which sections are lacking in polish and/or development, thus proving evidence as to why these bugs and issues are present.
+
+
+14.2.1 Updates to Documents
+
+
+This section includes which sections of the documents need to be updated for the bug fixes and feedback so that they are simply up to date.
+
+
+Requirement Document: The requirements document will be reviewed and rewritten to reflect the changes that have been made to the game since the writing of the document. Previous feedback will be taken into account when doing this.
+
+
+V&V: newly implemented features will get automatic testing as needed, and the V&V document will be updated to reflect these new changes
+
+
+Design Doc: the design document will be constantly updated through the term as needed. Any new design decision will be added to the document, and the document will be updated to reflect previous feedback
+
+
+14.2.2 Item Improvements
+
+
+The items system has had some issues in the development process as it still requires more fleshing out and modular organization. This section will cover the different concerns and an estimated time completion of when these components will be completed. 
+
+
+Inventory Interaction: The inventory manipulation between selecting, deselecting, deleting, and removing objects is almost implemented. The last portion that needs to be fixed and fully implemented is the item category check for the different inventory slots.  This will only allowed items with the matching category to be placed in the inventory slot that matches that category. See Item Prefabs for estimated time completion. 
+
+
+Item Prefabs: The framework for the different type of items has been created with the corresponding stat changes.  Unique item effects like grenades wear the item has a very unique process of stat changes still need to be implemented. The direct changes to the character stats still needs to be implemented in the combat view and will take some rigorous testing to validate as it has two large modules of the game interacting. There will be a need to do some testing with item pricing and stat balancing but that will occur after system has been implemented. Overall this entire module and it’s integration will be completed over the course of a week. The expected time of completion will be the 3rd of February. Testing will take longer and will have an expected validation period around the 17th of February.
+
+
+Item Save File: A section of the save file will need to incorporate what items have been equipped and obtained by the party. This save file should be be able to be written to and loaded from in between game sessions and Scene changes. This save file will also minimize the number of “lost” items when scenes are changed. The expected time of completion will be February 3rd. with tests for this section being completed around February 10th.
+
+
+14.2.3 General UI Improvements
+
+
+The UI has generally been untouched since the beginning of the project since it adds little to the gameplay. However it is still part of the game and will be implemented once the core mechanics have been implemented. This section will cover the different concerns and an estimated time completion of when these components will be completed. 
+
+
+UI Aesthetic: The appearance of the UI has barebones recently to focus more on functionality rather than aesthetic. There will be a reformatting of the UI system once all the mechanics have been integrated and tested. This will not take very long but will require some testing to ensure that the UI is both visually pleasing and concise. The implementation and test should be completed by the 25th of February. 
+
+
+UI Settings: The game has next to no format settings and not audio settings implemented. The menu setting implementation will need to be implemented so that the user can make these adjustments while playing the game. The implementation and test should be completed by the 25th of February. 
+
+
+UI Display Hierarchy: The game currently has not documented hierarchy of how the different menus layer on top of each other, causing very haphazard views that make menu surfing a chore. By implementing a proper hierarchy and defining the requisite assets, the team will be able to have to confusing order of menus in the game. The implementation and test should be completed by the 25th of February. 
+
+
+UI Display Hierarchy: The game currently has not documented hierarchy of how the different menus layer on top of each other, causing very haphazard views that make menu surfing a chore. By implementing a proper hierarchy and defining the requisite assets, the team will be able to have to confusing order of menus in the game. The implementation and test should be completed by the 25th of February. 
+
+
+UI Signal Indicators: The development team knows all the ins and outs of the program, which unfortunately gives them a bias against knowing how to lead the player to master the game. The team believes that the best way to solve this problem is to highlight interactions that they can perform in order for to teach the player what actions they can and cannot perform. These signals will guide the player as to what the ultimate goal of the game will be so they can being to formulate plans.  The implementation should be completed by the 27th of February and thorough testing should be completed the first week of March so the team can finalize changes.

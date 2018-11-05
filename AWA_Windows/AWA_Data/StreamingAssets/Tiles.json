@@ -1,0 +1,72 @@
+﻿[
+    {
+      "name": "snow1",
+      "spriteSheet": "BattleTiles/TileA5",
+      "sprite" : 1
+    },
+    {
+      "name": "snow2",
+      "spriteSheet": "BattleTiles/TileA5",
+      "sprite" : 24
+    },
+    {
+      "name": "snow3",
+      "spriteSheet": "BattleTiles/TileA5",
+      "sprite" : 27
+    },
+  {
+    "name": "snow4",
+    "spriteSheet": "BattleTiles/TileA2",
+    "sprite": 96
+  },
+  {
+    "name": "snow5",
+    "spriteSheet": "BattleTiles/TileA2",
+    "sprite": 98
+  },
+  {
+    "name": "snow6",
+    "spriteSheet": "BattleTiles/TileA2",
+    "sprite": 150
+  },
+  {
+    "name": "snow7",
+    "spriteSheet": "BattleTiles/TileA1_2",
+    "sprite": 0
+  },
+  {
+    "name": "Dirt1",
+    "spriteSheet": "BattleTiles/TileA5",
+    "sprite": 4
+  },
+  {
+      "name": "Dirt2",
+      "spriteSheet": "BattleTiles/TileA1",
+      "sprite" : 96
+  },
+  {
+    "name": "Grass1",
+    "spriteSheet": "BattleTiles/TileA5",
+    "sprite": 0
+  },
+  {
+    "name": "Grass2",
+    "spriteSheet": "BattleTiles/TileA5",
+    "sprite": 16
+  },
+  {
+      "name": "Grass3",
+      "spriteSheet": "BattleTiles/TileA5",
+      "sprite" : 22
+  },
+  {
+    "name": "Grass4",
+    "spriteSheet": "BattleTiles/TileA1_2",
+    "sprite": 0
+  },
+  {
+      "name": "Metal1",
+      "spriteSheet": "BattleTiles/Sci-Fi-Tiles_A4",
+      "sprite" : 31
+    }
+ ]

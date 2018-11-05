@@ -1,0 +1,241 @@
+28c28
+< Revision 1.0.1
+---
+> Revision 2.0.1
+31c31
+< 01/26/2018
+---
+> 03/03/2018
+84a85
+> 2.0.1 - Seconds Revision of the design doc and the high concept.
+175c176
+< 2.5 Player Role
+---
+> 2.5 Player Role and Experience
+184c185,190
+< Players should be motivated to reunite the astronauts with their team, and to keep them alive through the tough journey.
+---
+> Players should be motivated to reunite the astronauts with their team, and to keep them alive through the tough journey. They might feel frustrated at managing the team or facing a difficult fight, but they should want to keep going because they are invested in the characters or the mystery of the world. While truly sombre moments will be few and far between, they should give the players pause.
+> 
+> 
+> 2.6 Atmosphere
+>  
+> A World Apart should be filled with intrigue, tension, and occasional levity. While the world of AWA should feel cold and uninviting, the characters in it will be anything but. Each will have their own personality and quirks that accents an otherwise mysterious and unforgiving surrounding. Their colors will be vibrant where the rest of the world isn’t, and the things they say should make them feel human in the middle of an alien world.
+186a193
+> While the world will make use of cold ambience and sombre music to set the tone, the characters will be occasionally accompanied by lighter sounds and motifs. The battles will have brisk but low-key music being interrupted by poignant but not cacophonous sound effects.
+233c240
+< No Bullshit Moments
+---
+> No Frustrating Moments
+278c285
+< 5. Core Mechanics and Elements
+---
+> 5. Core Mechanics and Gameplay Elements
+281a289,290
+>   
+> 
+323c332
+< Inside of the combat scene, the player will only be able to perform actions on a handful of objects. These include the other character players, tiles, enemies and bosses. The player should never be able to move through or ontop of any other items in the scene and should not be able to interact with the terrain on the map.. The player does need to select the entity that they are interact with in order to perform the desired action, and the visual que will be given showing that they player can make that selection. The visual que is the red “X” that appears ontop of the desired entity. If the entity cannot be interact with, then it will have no visual que.
+---
+> Inside of the combat scene, the player will only be able to perform actions on a handful of objects. These include the other character players, tiles, enemies and bosses. The player should never be able to move through or on top of any other items in the scene and should not be able to interact with the terrain on the map.. The player does need to select the entity that they are interact with in order to perform the desired action, and the visual cue will be given showing that they player can make that selection. The visual cue is the red “X” that appears on top of the desired entity. If the entity cannot be interact with, then it will have no visual que.
+366c375,377
+< 5.2 World
+---
+> 5.2 Overworld
+>   
+> 
+375c386
+<         Merchant Menu - This menu is opened when the player lands on the merchant node. See the merchant question for more references. Once the menu has been closed, the player will not be able to re open the menu at that node. As such, a prompt to ask if you are ok with this selection is mentioned before the player leaves the shop.
+---
+>         Merchant Menu - This menu is opened when the player lands on the merchant node. See the merchant question for more references. Once the menu has been closed, the player will not be able to re open the menu at that node. As such, a prompt to ask if you are ok with this selection is mentioned before the player leaves the shop.(Note: The merchant menu is expected to be far more complex than the other menus.Depending on how further testing goes, it may make more sense for the merchant menu to exist in a scene of its own. )
+414c425,428
+< Implementation wise, this is achieved by taking the cost of all the connections within the minimum spanning tree, and doubling it before applying a 3x multiplier to the result and take that as the total supply to be distributed across the resource nodes of the region . The reason the cost of the connections is doubled is due to the potential for backtracking (dead ends) when traversing a minimum spanning tree.
+---
+> Supply costs are simply set to 1 between two nodes regardless of node-to-node distance to facilitate gameplay decisions and make strategizing for the overworld less cumbersome. By implementing supply costs in this manner, it is easier for the player to gauge, at a glance, how much supply they will need to reach a given destination. Given the complexity of supply availability( through events and currency), narrative decisions, and navigation choices based on location of combat nodes,  there is no reason to further confound the players with an extra layer of arithmetics for supply cost planning. 
+> 
+> 
+> Implementation wise,the minimum available supply is calculated by taking the cost of all the connections within the minimum spanning tree, and doubling it before applying a 3x multiplier to the result and take that as the total supply to be distributed across the resource nodes of the region . The reason the cost of the connections is doubled is due to the potential for backtracking (dead ends) when traversing a minimum spanning tree.
+454c468
+< * Poison Lubricant : Applied onto the melee weapon, causes the enemy that was hit on the health bar to looses 5 + 3 per level every 5 turns.
+---
+> * Poison Lubricant : Applied onto the melee weapon, causes the enemy that was hit on the health bar to loses 5 + 3 per level every 5 turns.
+469c483
+< * Galactic Rifle: Standard issued rifle. 15 attack  at 12 tiles plus 1 range per level
+---
+> * Galactic Rifle: Standard issue rifle. 15 attack  at 12 tiles plus 1 range per level
+501c515
+<         The algorithm that will determine the cost of the items will be scalar of the item's level and it's purpose. Testing the project by using automated tests will allow us to see what items are easily able to be purchased and will allow us to balance the game. The item values will be changed in according to allow some items to me more rare than other, allowing important decisions to be made when selling and buying items. The basic algorithm we will use is:
+---
+>         The algorithm that will determine the cost of the items will be scalar of the item's level and its purpose. Testing the project by using automated tests will allow us to see what items are easily able to be purchased and will allow us to balance the game. The item values will be changed in according to allow some items to me more rare than other, allowing important decisions to be made when selling and buying items. The basic algorithm we will use is:
+515c529
+<         A major of game settings will apply immediately when the game is running and only a few settings will be needed to restart the game. Our group is still unsure of how Unity determines it's resolution or Anti Aliasing settings but we can determine that only those two setting will be needed to restart the game if changed. If any other graphical, UI or audio changes are made to the game, they will be saved on the user's computer. We can ensure this by reading the information from a file that has all of the default settings for the game and then save the changes to that file if changes are made. The number of settings that can be changed are the system's resolution, Anti Aliasing, texture quality, windowed mode, UI size and offeset, master volume, music volume and sound effect volume.
+---
+>         A majority of game settings will apply immediately when the game is running and only a few settings will be needed to restart the game. Our group is still unsure of how Unity determines it's resolution or Anti Aliasing settings but we can determine that only those two setting will be needed to restart the game if changed. If any other graphical, UI or audio changes are made to the game, they will be saved on the user's computer. We can ensure this by reading the information from a file that has all of the default settings for the game and then save the changes to that file if changes are made. The number of settings that can be changed are the system's resolution, Anti Aliasing, texture quality, windowed mode, UI size and offset, master volume, music volume and sound effect volume.
+536a551
+>         
+539a555
+> Nothing for the section yet
+542,543d557
+< 
+< 
+763c777
+< Swinus - a boar like creature that wander the wastes
+---
+> Swinus - a boar like creature that wander the wastes. It is fairly sturdy, attacks with its tusks, has tough hide, and is fleet of foot.
+766c780,783
+< Genomorph - a race of beings that have mutated from humans after centuries of genetic modification, nanotech experimentations, and radiation. They have become feral and will attack anything without regard.
+---
+> Range - 1 | Health - 10 | Armor - 3 | Attack - 5 | Movement - 4
+> 
+> 
+> Genomorph - a race of beings that have mutated from humans after centuries of genetic modification, nanotech experimentations, and radiation. They have become feral and will attack anything without regard. It attacks anything on sight with its sharp claws, and is fairly durable due to its hard chitinous skin and muscled body.
+770a788,790
+> Range - 1 | Health - 15 | Armor - 7 | Attack - 6 | Movement - 3
+> 
+> 
+772c792,793
+<   K-8 - an android programmed to guard one of the only remaining seed vaults on earth. She has forgotten about what exactly she is protecting, and now wanders the underground complex without direction
+---
+>   Range - 1 | Health - 10 | Armor - 3 | Attack - 5 | Movement - 4
+> BOSS: K-8 - an android programmed to guard one of the only remaining seed vaults on earth. She has forgotten about what exactly she is protecting, and now wanders the underground complex without direction. K-8 has a short-ranged taser (Like Alexei) and is equipped with subdermal armor and enhanced fortitude. She also carries a rifle, which she can shoot at longer range. K8 can be defeated by using a “ISO Badge” item on her, as she is not hostile towards members of the ISO.
+774a796,801
+> Range - 2 | Health - 17 | Armor - 15 | Attack - 6 | Movement - 3
+> 
+> 
+> Special Actions: Gun (range 4)
+> 
+> 
+833c860
+< Usamy - a group of only green Planties that have made settlements out of older army bases and ruins. Due to the regression in technology and the lack of knowledge of architecture, these bases are more reminiscent of castles and keeps than what they were before. The Usarmy have a grundge against the Lucarts and have been in a war with them for quite a long time. They have captured the Lucart prince.
+---
+> Usamy - a group of only green Planties that have made settlements out of older army bases and ruins. Due to the regression in technology and the lack of knowledge of architecture, these bases are more reminiscent of castles and keeps than what they were before. The Usarmy have a grundge against the Lucarts and have been in a war with them for quite a long time. They have captured the Lucart prince. The Usamy and Lucarts both use a pressurized nail gun as their primary weapon, and wear basic protection
+835a863,865
+> Range - 3 | Health - 10 | Armor - 8 | Attack - 4 | Movement - 4
+> 
+> 
+845c875,882
+< Chancellor Horitice - Chancellor of the Lucarts and general of the Lucart army. Holds a lot of power in the Lucart Nation and wants to crush the Usamy.
+---
+> BOSS: Chancellor Horitice - Chancellor of the Lucarts and general of the Lucart army. Holds a lot of power in the Lucart Nation and wants to crush the Usamy. Horitice is outfitted with a better suit of armor, as well as a more advanced gun.
+> 
+> 
+> Range - 3 | Health - 20 | Armor - 15 | Attack - 6 | Movement - 3
+> 
+> 
+> Special: Warcry - boost the attack of all allies
+> Special: Tactician - While adjacent to an ally, ally gains 2 armor
+848c885
+< Eyebots - Strange weaponized robots wandering the land
+---
+> Eyebots - Strange weaponized robots wandering the land. Equipped with a small short ranged laser and steel plating, this thing isn’t very beefy.
+850a888,890
+> Range - 2| Health - 4 | Armor - 10 | Attack - 4 | Movement - 5
+> 
+> 
+866c906
+< Whatever the case, the political situation is thus: The Usamy and Lucarts are at war, the Usarmy have captured the Lucart Prince, Mora, and the Lucarts are amassing an army to take down the Usarmy.
+---
+> Whatever the case, the political situation is thus: The Usamy and Lucarts are at war, the Usamy have captured the Lucart Prince, Mora, and the Lucarts are amassing an army to take down the Usamy.
+872c912
+< If they act as mediators, there will be several people from both sides trying to stop them. If the take the prince, Mora will inform them of his situation and the group can choose to help him. Theres several ways the senarios can pan out, but the results are one of the following:
+---
+> If they act as mediators, there will be several people from both sides trying to stop them. If the take the prince, Mora will inform them of his situation and the group can choose to help him. There's several ways the scenarios can pan out, but the results are one of the following:
+916c956
+< FFL soldiers - killer androids created by the FFL to do their bidding. In addition to recon, these androids are also tasked with rounding up Planties for experimentation
+---
+> FFL soldiers - killer androids created by the FFL to do their bidding. In addition to recon, these androids are also tasked with rounding up Planties for experimentation. Equipped with a rifle and advanced armor, these guys are a force to be reckoned with.
+918a959
+> Range - 3 | Health - 10 | Armor - 19 | Attack - 8 | Movement - 3
+921a963,964
+> Range - 3 | Health - 6 | Armor - 15 | Attack - 7 | Movement - 3
+> 
+922a966
+> Special: Repair Armor - repair 8 points of armor on an ally
+923a968
+> 
+924a970,972
+> Range - 3 | Health - 7 | Armor - 15 | Attack - 6 | Movement - 5
+> 
+> 
+968,982c1016,1023
+< 13. SFX
+< 13.1 Weapon Effects
+< 
+< 
+< 
+< 
+< 13.2 Movement Effects
+< 
+< 
+< Walk on Dirt
+< Walk on Stone
+< Walk on Metal
+< Walk on Wood
+< Walk on Flesh
+< Walk In Water
+---
+> 12. Sounds and Ambiance
+> 12.1 Sound Effects
+> The goal of sound effects in this game is mainly to provide a sense of immersion for the players. 
+> To achieve this, there are sound effects assigned to every available combat action. There are less sound effects during the overworld phases of the game as the overworld itself is presented in a far more abstract way.The overworld thus rely upon ambient visual clutters and background music to offer a different style of immersion.
+>         The sound effects used thus far in the game comes from a sampled collection of pre-recorded audio offered without fees  by Soniss.com and distributed via peer-to-peer networks. Further audio effects may be added to the game as required by new/modified weapons, items, or skills.
+> 12.2 Music
+>         The music in the game mainly focuses on a desolate or desperate theme as the party tries to find their way across a world that was once familiar, but now unknown to them. The heavy piano notes in the main background musics conveys the feeling of desolation in the ice lands, and adds to the theme of emptiness to the first section of the overworld. Combat music, on the other hand, is more lively albeit with a serious tune.While these music choices convey the overarching themes used for ambiance, certain specific situations within the story may call for music that is of a different or contrary nature to these themes.
+>         The background music adapted into the game are composed by I3 and used under license. With the implementation of successive arcs and story chapters, music from other composers may be included. 
+985,1006d1025
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 13.3 Other Character Effects
+< 
+< 
+< Grunt
+< Heavy Breath
+< Death
+< 
+< 
+< 13.4 Enemy Effects
+< 
+< 
+< 13.5 Boss Effects
+< 
+< 
+1010,1011c1029,1030
+< 14. Rev 1 Plan
+< 14.1 Condensed Bug and Issue report
+---
+> 13. Rev 2 Plan
+> 13.1 Condensed Bug and Issue report
+1017c1036
+< 14.1.1 Bug Fixes
+---
+> 13.1.1 Bug Fixes
+1043c1062
+< 14.1.2 Issue Fixes
+---
+> 13.1.2 Issue Fixes
+1065c1084
+< 14.1.3 Bug Fix Priority Matrix
+---
+> 13.1.3 Bug Fix Priority Matrix
+1110c1129
+< 14.1.4 Anticipated Features
+---
+> 13.1.4 Anticipated Features
+1127c1146
+< 14.2 Bug and Issue Diagnosis
+---
+> 13.2 Bug and Issue Diagnosis
+1133c1152
+< 14.2.1 Updates to Documents
+---
+> 13.2.1 Updates to Documents
+1163c1182
+< 14.2.3 General UI Improvements
+---
+> 13.2.3 General UI Improvements

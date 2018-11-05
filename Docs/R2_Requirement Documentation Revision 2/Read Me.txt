@@ -1,0 +1,17 @@
+diff file will be emailed to Dan shortly following a submission. 
+
+The RequirementsDocFinal file illustrates the difference between the orginal sumbitted file and the final file through the use of highlights and strikethroughs, if the change has been highlighted, then it has been added, if it has a strikethrough, then it has been removed.
+
+Summary of changes:
+
+1) 
+Requirement updates, both functional and non functional.
+
+2)
+The unacceptable high amount of spelling and grammer errors has been reduced.
+
+3)
+The Audio and Visual sections have been fleshed out but may be subject to change for a few final boss looks, or final polish. The bulk of the images and audio are currently in the project, there should be little to no additions for the final demo. Any changes made will be notified in 2.2 update.
+
+4)
+Minor Change made for Schedule updates.

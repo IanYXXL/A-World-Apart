@@ -1,0 +1,841 @@
+﻿ [
+    {
+      "id": 11,
+      "requirement": [ 0 ],
+      "Dialogue": [
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "ugh...",
+            "Shit...",
+            "Hello?",
+            "Anyone breathing?"
+          ]
+        },
+        {
+          "name": "Lee",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "Yeah.",
+            "I've got Alexi here.",
+            "He's unconscious."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Get him up."
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "ugh..."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "Lines": [
+            "Morning Sunshine!",
+            "Hey bud, do me a favour and let me know how many fingers the Major is holding up."
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "ummm...",
+            "None?"
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Oh, that can't be right...",
+            "Sound to me like a concussion."
+          ]
+        },
+        {
+          "name": "Lee",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "He's right, I'm not holding up anything",
+            "Alexei looks fine."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Now Major, it is my expert opinion, as Head Chief Doctor Extrodinaire, MD. PHD. esquire, that you should hold up some fingers"
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "She's holding up one in particular."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Much Appreciated!"
+          ]
+        },
+        {
+          "name": "Lee",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "Where is the captain?"
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Well...",
+            "The thing is...",
+            "Looks like you're in charge now, Major."
+          ]
+        },
+        {
+          "name": "Lee",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "..."
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "..."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "Lines": [
+            "..."
+          ]
+        },
+        {
+          "name": "Blank",
+          "image": "Black",
+          "side":  "R",
+          "Lines": [
+            ""
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "...So What now?"
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "I think I saw a hill not far from here,",
+            "We might get a better signal for the comms."
+          ]
+        },
+        {
+          "name": "Alexei",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "You think the others are still alive?"
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "I'm sure they are."
+          ]
+        },
+        {
+          "name": "Lee",
+          "image": "N",
+          "side":  "R",
+          "Lines": [
+            "Okay, looks like we have a good ammount of supplies, and the rover's still intact.",
+            "Let's go."
+          ]
+        },
+        {
+          "name": "Kroner",
+          "image": "N",
+          "side":  "L",
+          "Lines": [
+            "Sir Major Sir!"
+          ]
+        }
+      ]
+    },
+  {
+    "id": 91,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "*Pant* *Pant*",
+          "God, this whole place is like Santa's wet dream",
+          "Snow, you are not making a good first impression"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Stop being a baby, we're almost there",
+          "Look at Alexei, he's doing fine"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Easy for you to say Colonel, you've got those fancy military subdermal cybernetics",
+          "Besides, I bet Alexei grew up in an igloo"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Not quite, last time I saw snow I was still in high school",
+          "The North is about as warm as the rest of the world",
+          "All this white is a little disorienting actu...",
+          "...",
+          "Woah"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Now that's a view"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Frost falls and makes the world new"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Famous Quote or something?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Something Alyanna used to say to me",
+          "What I'd give to show her this"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "You'll do that right after we find her, and the rest of the crew",
+          "Kroner, you have the Hermes set up?"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Yes Ma'am",
+          "Wait, what was that?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "What is it?"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Looks like a distress signal",
+          "It was brief, so they might have lost their beacon",
+          "But I definitly saw it"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Where did it come from"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Yeah... that's the thing",
+          "It's on the other side of the world"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Hey, either of you find it weird that these trees look a little too ...earthy?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "It's crossed my mind, which makes me think maybe one of the other ships..."
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "You think they came down here and grew all this?",
+          "Isn't that a little far fetched"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "That's the thing, remember that gravity ring we saw right before we crashed?",
+          "That definitly seemed like one of ours"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Yes, it was strange that our ship's internal clocks were malfunctional",
+          "You think what, that we're hundreds of years late?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Maybe thousands, those cryopods were designed to be able to work for pretty much ever",
+          "Plus the ship's solar cells would have kept us going"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "So, we might be the only ones on this planet that remembers the ISO mission"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Could be...",
+          "We might even be the last humans ever"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "...",
+          "Thanks for putting that thought into my head"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Kroner, stop playing with the buggy, you're going to break something"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Whaaaaat?",
+          "I'll have you know that I'm very qualified to play with the buggy"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "I'll have you know that I'm very qualified to punch you in the face"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Duly Noted."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Hey Colonel, *Ahem*",
+          "Do you want to build a snowman?"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "No"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Aww, come onnnnn",
+          "Where's your sense of wonder?"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I lost it when you entered my life"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Ouch..."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Hey Alexei, not to be nosy but, how'd you lose the arm?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Bomb",
+          "I'm glad that's all I lost"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "I didn't know you were in the army",
+          "Must have been horrible"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I served for a few years, but that's not when I lost it",
+          "I was catching a train in Stalingrad"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Oh",
+          "Some people...",
+          "It still illudes me why a person would be driven to do something so heinous"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I was angry, and distraught for a while, but... it wasn't all bad",
+          "I'm glad Alyanna was there",
+          "She just made everything... alright"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "She sounds like something else",
+          "...",
+          "We'll find her, I promise"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I hope you're right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Hey Kroner, could you pass me that wrench?"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "One wrench, coming up",
+          "What's wrong with her?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Oh, nothing, just wanted to do some maintanence",
+          "You can never be too carful with these things"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I gotcha, had to do that all the time with ol' Bessie"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Weird name for a car"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Oh no, Bessie's my filing cabinet",
+          "You ever try to fix one of those thing?",
+          "All the thought gets put in cars and robots, and not a single soul wants to make a better cabinet"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Why not just store the files electronically?"
+        ]
+      },
+      {
+        "name": "Kroner",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "...",
+          "Good Point."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Alexei, you served in the army right?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Uh, yeah, for three years"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Engineer's Divison?"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "2nd infantry actually",
+          "You were Special Ops right?",
+          "Don't think I'll ever be able to do something like that"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "It's not so different from the regular forces, just more training",
+          "At the end of the day, it's still point and shoot",
+          "Kill or be killed"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I can see why you chose to joined up,",
+          "you seem like a natural for that sort of thing"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Maybe..."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "requirement": [ 0 ],
+    "Dialogue": [
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Hey Lee, why'd you decide to come to ISO?",
+          "You seem like you've still got army blood in you, through and through"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Sometimes you just get tired of putting bullets in people's heads"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "err..."
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "Oh, sorry, that might have sounded a bit off putting",
+          "Though, it's partially true",
+          "The other part is... well, pretty silly"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Now I'm intrigued"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "My grandfather's an astronomer, and he used to dress me up in costume and we'd pretend we were in space together",
+          "I figured I try the real deal",
+          "Looked like the mission might need someone with my skillset anyways"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "I've never heard you talk about your family...",
+          "When we left, were they still..."
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "No... my grandfather passed away long before the mission",
+          "And, I don't really have any other family"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "I'm sorry to hear that",
+          "I left my mom back home, and Alyanna still had two brothers",
+          "...",
+          "I guess they're all gone now"
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "We would have been too, if we stayed"
+        ]
+      },
+      {
+        "name": "Alexei",
+        "image": "N",
+        "side": "R",
+        "Lines": [
+          "I know...",
+          "but a part of me..."
+        ]
+      },
+      {
+        "name": "Lee",
+        "image": "N",
+        "side": "L",
+        "Lines": [
+          "Don't.",
+          "We have a mission to fulfil, now pack up and let's go"
+        ]
+      }
+    ]
+  }
+ ]

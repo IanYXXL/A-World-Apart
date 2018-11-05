@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaHatesPoorKids", "SantaHatesPoorKids.csproj", "{9BE7FF61-627B-34B3-2E81-411F5F4DAE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaHatesPoorKids.Editor", "SantaHatesPoorKids.Editor.csproj", "{8A8118D8-34E4-E18E-A5AC-EB4BA8BEE27F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE7FF61-627B-34B3-2E81-411F5F4DAE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE7FF61-627B-34B3-2E81-411F5F4DAE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE7FF61-627B-34B3-2E81-411F5F4DAE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE7FF61-627B-34B3-2E81-411F5F4DAE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8118D8-34E4-E18E-A5AC-EB4BA8BEE27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8118D8-34E4-E18E-A5AC-EB4BA8BEE27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8118D8-34E4-E18E-A5AC-EB4BA8BEE27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8118D8-34E4-E18E-A5AC-EB4BA8BEE27F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
