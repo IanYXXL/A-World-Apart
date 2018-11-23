@@ -1,1 +1,3 @@
-Dummy readme so that the project is not empty.  Some settings cannot be set on an empty project.
+--A world Apart--
+
+A rogue-like Unity game created in Unity
